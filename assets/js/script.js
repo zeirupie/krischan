@@ -112,12 +112,15 @@ var TxtType = function(el, toRotate, period) {
 
 document.getElementById("menuBtn").onclick = function ()
 {
+    document.getElementById("menuBtn").className= "fa-solid fa-xmark";
+
     if(document.getElementById("sidenav").style.display=="" || document.getElementById("sidenav").style.display=="none")
     {
         document.getElementById("sidenav").style.display="block";
     }
     else 
     {
+        document.getElementById("menuBtn").className= "fa fa-bars";
         document.getElementById("sidenav").style.display="none";
     }
     
