@@ -444,7 +444,7 @@ button
 
 #menuBtn
 {
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 30px;
     font-size: 2rem;
