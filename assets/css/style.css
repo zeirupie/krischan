@@ -1,0 +1,608 @@
+:root
+{
+    --color1:#1E201E;
+    --color2:#3C3D37;
+    --color3:#697565;
+    --color4:#ECDFCC;
+    --color5:#0d6efd;
+    --txt1:white;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+p,
+button
+{
+    font-size: 18px;
+}
+
+.a_link 
+{
+    color: var(--color5);
+}
+
+body
+{
+    background-color: var(--color1);
+    color: white;
+    display: flex;
+}
+
+header
+{
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header h2
+{
+    color: var(--txt1);
+    text-align: center;
+}
+
+.hero 
+{
+    height: 600px;
+    display: flex;
+    color: var(--txt1);
+    background-image: url(../img/tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+.hero-two 
+{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-two-div1 
+{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    padding-right: 50px;
+}
+
+.hero-two-div1 p a 
+{
+    color: var(--color5);
+}
+
+.hero-two h1 
+{
+    font-size: 3.4em;
+}
+
+.hero-two h3
+{
+    color: var(--color5);
+}
+
+.hero-two h2
+{
+    margin-bottom: 15px;
+}
+
+.hero-two button 
+{
+    padding: 7px 10px;
+    margin-top: 15px;
+    background-color: var(--color5);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.hero-two img, .about-two img
+{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.category-skill
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+    justify-content: center;
+}
+
+.category-skill h2 
+{
+    width: 33%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 2px;
+    background-color: var(--color2);
+    margin-bottom: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.category-skill h2:hover 
+{
+    background-color: var(--color5);
+}
+
+.title 
+{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.go-to-top 
+{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.7rem;
+    background-color: rgba(57, 108, 249, 0.344);
+    color: rgba(255, 255, 255, 0.461);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    z-index: 10;
+}
+
+.go-to-top:hover 
+{
+    color: var(--txt1);
+    background-color: var(--color5);
+    cursor: pointer;
+}
+
+.social-icons
+{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    width: 300px;
+    padding: 0 30px;
+}
+
+.social-icons a 
+{
+    color: var(--txt1);
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: -5px;
+}
+
+.social-icons i 
+{
+    margin-right: 10px;
+}
+
+.social-icons a:hover
+{
+    color: var(--color5);
+}
+
+.main-sidebar 
+{
+    position: fixed;
+    width: 300px;
+    background-color: var(--color1);
+    border-right: solid 1px var(--color2);
+    scrollbar-color: pink;
+    position: fixed;
+}
+
+.body-wrapper 
+{
+    width: 100%;
+    padding-left: 300px;
+}
+
+header img 
+{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50px;
+    border: solid 2px white;
+}
+
+.myname 
+{
+    margin: 19px 0;
+}
+
+.hero-two-div1 a 
+{
+    color: var(--color5);
+}
+
+.wip-text 
+{
+    color: gray;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.portfolio-webdev 
+{
+    display: none;
+}
+
+.div-line
+{
+    border: solid 1px gray;
+    width: 20%;
+    height: 1px;
+    margin: 0 10px;
+}
+
+.about-me-sec
+{
+    display: flex;
+    padding: 0 50px;
+    margin-bottom: 70px;
+}
+
+.about-text 
+{
+    padding: 30px;
+}
+
+.about-text h2 
+{
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--color5);
+}
+
+.about-text p 
+{
+    margin-bottom: 30px;
+}
+
+.about-text p i 
+{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+.about-text .fa-code
+{
+   color: orangered;
+}
+
+.about-text .fa-pen-nib
+{
+    color: white;
+}
+
+.about-text .fa-palette
+{
+    color: rgb(185, 185, 185);
+}
+
+.about-me-sec img 
+{
+    box-shadow: 2px  2px 3px 5px rgba(54, 67, 96, 0.307);
+}
+
+.contact-section 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.conatct-nameEmail
+{
+    display: flex;
+    gap: 10px;
+}
+
+.conatct-nameEmail input
+{
+    width: 100%;
+}
+
+.contact-section input 
+{
+    padding: 7px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-cont 
+{
+    width: 70%;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 2px  2px 3px 5px rgba(54, 67, 96, 0.307);
+    padding-top: 20px;
+}
+
+.about-cont div 
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+textarea 
+{
+    width: 100%;
+    height: 100px;
+}
+
+.conatct-nameEmail
+{
+    margin-top: -20px;
+}
+
+.about-cont button 
+{
+    width: 60%;
+    text-align: center;
+    background-color: var(--color5);
+    border: none;
+    color: var(--txt1);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.s-btn 
+{
+    text-align: center;
+}
+
+.order1 
+{
+    order: 0;
+}
+
+.order2
+{
+    order: 1;
+}
+
+.portfolio-card 
+{
+    width: 350px;
+    overflow: hidden;
+    height: 350px;
+    margin: 0 10px;
+    margin-bottom: 30px;
+}
+
+.portfolio-card img 
+{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+
+}
+
+.portfolio-graphic
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-art
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin-bottom: 100px;
+    display: none;
+}
+
+.card-two 
+{
+    display: flex;
+}
+
+a,  
+button
+{
+    cursor: pointer;
+}
+
+#menuBtn
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.6);
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width:1080px)
+{
+    #menuBtn 
+    {
+        display: flex;
+    }
+
+    .body-wrapper 
+    {
+        padding-left: 0;
+    }
+
+    .hero 
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 100px 20px;
+        align-items: center;
+    }
+
+    .about-me-sec 
+    {
+        flex-direction: column;
+    }
+    
+    .order1 
+    {
+        order: 1;
+        margin-top: 50px;
+    }
+
+    .order2
+    {
+        order: 0;
+    }
+
+    .about-two-img 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-sidebar
+    {
+        display: none;
+        box-shadow: 0 0 0 1000px rgba(0,0,0,0.5);
+    }
+
+} 
+
+@media (max-width:835px) 
+{
+
+    body 
+    {
+        flex-direction: column;
+    }
+
+    .card-two 
+    {
+        flex-direction: column;
+    }
+
+    .body-wrapper 
+    {
+        padding-left: 0;
+    }
+
+    .category-skill
+    {
+        padding: 0 20px;
+    }
+
+    .hero-two-div1
+    {
+        padding:0 50px;
+    }
+
+    .about-cont
+    {
+        width: 80%;
+    }
+  
+}
+
+@media (max-width:600px) 
+{
+    .about-me-sec 
+    {
+        padding: 0;
+    }
+    .hero-two-div1 div
+    {
+        padding: 0 50px;
+    }
+
+    .hero-two img,.about-me-sec  img
+    {
+        width: 300px;
+        height: 359px;
+    }
+
+    .hero-two-div1 
+    {
+        padding: 0;
+        width: auto;
+    }
+
+    .hero-two-div1 div 
+    {
+        padding: 0;
+    }
+
+    .hero 
+    {
+        padding: 50px 20px;
+    }
+
+    .go-to-top
+    {
+        right: 10px;
+        bottom: 20px;
+    }
+
+    .category-skill 
+    {
+        padding: 0 10px;
+    }
+
+    .category-skill h2 
+    {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .conatct-nameEmail
+    {
+        flex-direction: column;
+    }
+
+    .about-cont
+    {
+        width: 90%;
+    }
+
+    
+}
+
