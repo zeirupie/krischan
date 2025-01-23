@@ -253,10 +253,6 @@ header img
     padding-bottom: 100px;
 }
 
-.portfolio-webdev 
-{
-    display: none;
-}
 
 .div-line
 {
@@ -411,7 +407,6 @@ textarea
     width: 100%;
     height: inherit;
     object-fit: cover;
-
 }
 
 .portfolio-graphic
@@ -420,6 +415,7 @@ textarea
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
     margin-bottom: 100px;
+    display: none;
 }
 
 .portfolio-art
@@ -457,6 +453,69 @@ button
     border-radius: 10px;
     cursor: pointer;
 }
+
+.website-card
+{
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    border-radius: 25px;
+    background-color: #3c3d37;
+    display: flex;
+    padding: 10px 20px;
+
+}
+
+.img-c
+{
+    height:400px;
+    overflow: hidden;
+    width: auto;
+}
+
+.img-c img 
+{
+    height: 380px;
+
+}
+
+.txt-c 
+{
+    padding:20px;
+    color:white;
+    width: 70%;
+    text-align: left;
+    position: relative;
+}
+
+.txt-c p 
+{
+    margin: 20px 0;
+}
+
+.txt-c a 
+{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: var(--color5);
+    bottom: 30px;
+}
+
+.logo-f, .logo-f img
+{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
 @media (max-width:1080px)
 {
     #menuBtn 
@@ -480,6 +539,27 @@ button
     .about-me-sec 
     {
         flex-direction: column;
+    }
+
+    .website-card
+    {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .img-c 
+    {
+        width: 100%;
+    }
+
+    .txt-c 
+    {
+        width: 100%;
+    }
+
+    .logo-c
+    {
+        margin-bottom: 100px;
     }
     
     .order1 
