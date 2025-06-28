@@ -409,13 +409,19 @@ textarea
     object-fit: cover;
 }
 
-.portfolio-graphic
+
+.portfolio-graphic, .cont-dev
 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
     margin-bottom: 100px;
     display: none;
+}
+
+.cont-dev
+{
+    display: block;
 }
 
 .portfolio-art
@@ -442,7 +448,7 @@ button
 {
     position: fixed;
     top: 30px;
-    right: 30px;
+    right: 30px;    
     font-size: 2rem;
     background-color: rgba(0,0,0,0.6);
     width: 50px;
@@ -464,7 +470,15 @@ button
     background-color: #3c3d37;
     display: flex;
     padding: 10px 20px;
+    margin-top: 20px;
 
+}
+
+
+.logo-c 
+{
+    margin-top: 20px;
+    gap: 5px;
 }
 
 .img-c
@@ -477,7 +491,14 @@ button
 .img-c img 
 {
     height: 380px;
+    object-fit: contain;
 
+}
+
+.islandscape 
+{
+    height: auto;
+    flex-direction: column;
 }
 
 .txt-c 
@@ -550,16 +571,17 @@ button
     .img-c 
     {
         width: 100%;
+        height: auto;
+    }
+
+    .img-c .imglarge
+    {
+        height: 200px;
     }
 
     .txt-c 
     {
         width: 100%;
-    }
-
-    .logo-c
-    {
-        margin-bottom: 100px;
     }
     
     .order1 
