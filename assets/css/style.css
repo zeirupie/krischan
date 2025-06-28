@@ -459,6 +459,7 @@ button
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .website-card
@@ -577,7 +578,8 @@ button
 
     .img-c .imglarge
     {
-        height: 180px;
+        height: 160px;
+        width: 100%;
     }
 
     .txt-c 
