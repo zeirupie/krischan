@@ -214,6 +214,7 @@ header h2
     border-right: solid 1px var(--color2);
     scrollbar-color: pink;
     position: fixed;
+    z-index: 999;
 }
 
 .body-wrapper 
@@ -576,7 +577,7 @@ button
 
     .img-c .imglarge
     {
-        height: 200px;
+        height: 180px;
     }
 
     .txt-c 
